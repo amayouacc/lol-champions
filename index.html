@@ -5,33 +5,72 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>League of Legends Champions</title>
     <style>
+        /* bodyの基本設定 */
         body {
-            background-color: black; /* 背景を黒に設定 */
-            color: #00bfff; /* 文字色をカッコいい青に設定 */
-            text-align: center; /* 中央揃え */
+            margin: 0;
+            overflow: hidden;
+            color: #00b1ff;
+            text-align: center;
+            position: relative;
+            background-color: #2a2a2a;
+        }
+
+        /* 背景画像にぼかし効果を適用して全画面にフィットさせる */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            background-image: url('https://cdn.discordapp.com/attachments/1141956572419989504/1301494210188546099/image.png?ex=6724ae70&is=67235cf0&hm=55b93e09021437cf581b45af7a87d12c2fb402ca6ef283f93a39ea88cb1d1f18&');
+            background-size: cover;
+            background-position: center;
+            filter: blur(4px); /* ぼかし効果を適用 */
+            z-index: -1; /* 背景を後ろに配置 */
         }
 
         .lane a {
             display: inline-block;
             position: relative;
             overflow: hidden;
-            margin: 10px; /* 画像間の余白を増やす */
+            margin: 6px;
+            text-decoration: none;
         }
 
         .lane img {
-            width: 100px; /* 画像サイズ */
-            height: 100px; /* 画像サイズ */
-            transition: filter 0.3s; /* フィルターアニメーション */
+            width: 90px;
+            height: 90px;
+            transition: filter 0.3s, transform 0.3s;
+            border: 5px solid black;
+            border-radius: 10px;
         }
 
         .lane a:hover img {
-            filter: brightness(1.5); /* ホバー時に明るさを上げる */
+            filter: brightness(1.4);
+            transform: scale(1.2);
+        }
+
+        .lane span {
+            display: block;
+            transition: text-shadow 0.3s;
+        }
+
+        .lane a:hover span {
+            text-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff;
         }
     </style>
 </head>
 <body>
+    <div class="lane">
+        <!-- ここに画像やコンテンツを追加 -->
+    </div>
+</body>
+</html>
 
-<h2>TOP</h2> <!-- TOPセクションを追加 -->
+  
+
+<h2>TOP</h2>
 <div class="lane">
     <a href="https://www.deeplol.gg/champions/aatrox/build/top" target="_blank">
         <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Aatrox.png" alt="Aatrox"> <!-- Aatroxの画像 -->
@@ -60,9 +99,6 @@
     </a>
     <a href="https://www.deeplol.gg/champions/karthus/build/jungle" target="_blank">
         <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Karthus.png" alt="Karthus">
-    </a>
-    <a href="https://www.deeplol.gg/champions/lee-sin/build/jungle" target="_blank">
-        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/LeeSin.png" alt="Lee Sin">
     </a>
     <a href="https://www.deeplol.gg/champions/graves/build/jungle" target="_blank">
         <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Graves.png" alt="Graves">
