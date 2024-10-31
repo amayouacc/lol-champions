@@ -8,17 +8,23 @@
             background-color: #1c1c1c; /* 背景色を黒に近い色に */
             color: #ff3366; /* 文字の色を赤とピンクの間に */
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0; /* マージンを0に */
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* 中央に配置 */
+            justify-content: center; /* 中央に配置 */
+            height: 100vh; /* 高さを100vhに設定 */
         }
         h2 {
             color: #ff3366; /* タイトルの文字色を変更 */
-            text-align: left; /* 左寄せ */
+            text-align: center; /* 中央寄せ */
             font-weight: bold; /* ボールドに */
-            margin-top: 20px; /* 上の余白を追加 */
+            margin: 20px 0; /* 上下の余白を追加 */
         }
         .lane {
             display: flex;
             align-items: center;
+            justify-content: center; /* 中央に配置 */
             margin: 10px 0;
             flex-wrap: wrap;
         }
@@ -104,15 +110,15 @@
         </a>
     </div>
 
-    <h2>TOP</h2> <!-- TOPセクションを追加 -->
-    <div class="lane">
-        <a href="https://www.deeplol.gg/champions/aatrox/build/top" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Aatrox.png" alt="Aatrox"> <!-- Aatroxの画像 -->
-        </a>
-        <a href="https://www.deeplol.gg/champions/kennen/build/top" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Kennen.png" alt="Kennen"> <!-- Kennenの画像 -->
-        </a>
-    </div>
-
-</body>
-</html>
+<h2>TOP</h2> <!-- TOPセクションを追加 -->
+<div class="lane">
+    <a href="https://www.deeplol.gg/champions/aatrox/build/top" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Aatrox.png" alt="Aatrox"> <!-- Aatroxの画像 -->
+    </a>
+    <a href="https://www.deeplol.gg/champions/darius/build/top" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Darius.png" alt="Darius"> <!-- Dariusの画像 -->
+    </a>
+    <a href="https://www.deeplol.gg/champions/kennen/build/top" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Kennen.png" alt="Kennen"> <!-- Kennenの画像 -->
+    </a>
+</div>
