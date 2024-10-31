@@ -3,112 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>League of Legends Champions</title>
     <style>
         body {
-            background-color: #1c1c1c; /* 背景色を黒に近い色に */
-            color: #ff3366; /* 文字の色を赤とピンクの間に */
-            font-family: Arial, sans-serif;
-            margin: 0; /* マージンを0に */
-            display: flex;
-            flex-direction: column;
-            align-items: center; /* 中央に配置 */
-            justify-content: center; /* 中央に配置 */
-            height: 100vh; /* 高さを100vhに設定 */
+            background-color: black; /* 背景を黒に設定 */
+            color: #00bfff; /* 文字色をカッコいい青に設定 */
+            text-align: center; /* 中央揃え */
         }
-        h2 {
-            color: #ff3366; /* タイトルの文字色を変更 */
-            text-align: center; /* 中央寄せ */
-            font-weight: bold; /* ボールドに */
-            margin: 20px 0; /* 上下の余白を追加 */
+
+        .lane a {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+            margin: 10px; /* 画像間の余白を増やす */
         }
-        .lane {
-            display: flex;
-            align-items: center;
-            justify-content: center; /* 中央に配置 */
-            margin: 10px 0;
-            flex-wrap: wrap;
-        }
+
         .lane img {
-            width: 100px; /* 画像サイズを100x100に変更 */
-            height: 100px; /* 画像サイズを100x100に変更 */
-            margin: 5px; /* 画像間の余白を増やす */
-            transition: transform 0.3s, filter 0.3s; /* ホバーエフェクトのアニメーション */
+            width: 100px; /* 画像サイズ */
+            height: 100px; /* 画像サイズ */
+            transition: filter 0.3s; /* フィルターアニメーション */
         }
-        .lane img:hover {
-            transform: scale(1.1); /* ホバー時に画像を少し拡大 */
-            filter: brightness(1.2) saturate(1.5); /* キラキラ効果のためのフィルタ */
+
+        .lane a:hover img {
+            filter: brightness(1.5); /* ホバー時に明るさを上げる */
         }
     </style>
 </head>
 <body>
-    
-    <h2>MID</h2>
-    <div class="lane">
-        <a href="https://www.deeplol.gg/champions/ahri/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Ahri.png" alt="Ahri">
-        </a>
-        <a href="https://www.deeplol.gg/champions/sylas/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Sylas.png" alt="Sylas">
-        </a>
-        <a href="https://www.deeplol.gg/champions/viktor/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Viktor.png" alt="Viktor">
-        </a>
-        <a href="https://www.deeplol.gg/champions/oriana/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Orianna.png" alt="Orianna">
-        </a>
-        <a href="https://www.deeplol.gg/champions/syndra/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Syndra.png" alt="Syndra">
-        </a>
-        <a href="https://www.deeplol.gg/champions/anivia/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Anivia.png" alt="Anivia">
-        </a>
-        <a href="https://www.deeplol.gg/champions/cassiopeia/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Cassiopeia.png" alt="Cassiopeia">
-        </a>
-        <a href="https://www.deeplol.gg/champions/yone/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Yone.png" alt="Yone">
-        </a>
-        <a href="https://www.deeplol.gg/champions/yasuo/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Yasuo.png" alt="Yasuo">
-        </a>
-        <a href="https://www.deeplol.gg/champions/irelia/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Irelia.png" alt="Irelia">
-        </a>
-        <a href="https://www.deeplol.gg/champions/tristana/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Tristana.png" alt="Tristana">
-        </a>
-        <a href="https://www.deeplol.gg/champions/corki/build/middle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Corki.png" alt="Corki">
-        </a>
-    </div>
-
-    <h2>JG</h2>
-    <div class="lane">
-        <a href="https://www.deeplol.gg/champions/diana/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Diana.png" alt="Diana">
-        </a>
-        <a href="https://www.deeplol.gg/champions/taliyah/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Taliyah.png" alt="Taliyah">
-        </a>
-        <a href="https://www.deeplol.gg/champions/karthus/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Karthus.png" alt="Karthus">
-        </a>
-        <a href="https://www.deeplol.gg/champions/lee-sin/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/LeeSin.png" alt="Lee Sin">
-        </a>
-        <a href="https://www.deeplol.gg/champions/graves/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Graves.png" alt="Graves">
-        </a>
-        <a href="https://www.deeplol.gg/champions/kindred/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Kindred.png" alt="Kindred">
-        </a>
-        <a href="https://www.deeplol.gg/champions/rengar/build/jungle" target="_blank">
-            <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Rengar.png" alt="Rengar">
-        </a>
-        <a href="https://www.deeplol.gg/champions/kha-zix/build/jungle" target="_blank">
-            <img src="https://cdn5.lolalytics.com/champx92/khazix.webp" alt="Kha'Zix">
-        </a>
-    </div>
 
 <h2>TOP</h2> <!-- TOPセクションを追加 -->
 <div class="lane">
@@ -121,4 +42,77 @@
     <a href="https://www.deeplol.gg/champions/kennen/build/top" target="_blank">
         <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Kennen.png" alt="Kennen"> <!-- Kennenの画像 -->
     </a>
+    <a href="https://www.deeplol.gg/champions/gwen/build/top" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Gwen.png" alt="Gwen"> <!-- Gwenの画像 -->
+    </a>
+    <a href="https://www.deeplol.gg/champions/ksante/build/top" target="_blank">
+        <img src="https://deeplol-ddragon-cdn.deeplol.gg/cdn/14.21.1/img/champion/KSante.png?f=webp" alt="K'Sante"> <!-- K'Santeの画像 -->
+    </a>
 </div>
+
+<h2>JG</h2>
+<div class="lane">
+    <a href="https://www.deeplol.gg/champions/diana/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Diana.png" alt="Diana">
+    </a>
+    <a href="https://www.deeplol.gg/champions/taliyah/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Taliyah.png" alt="Taliyah">
+    </a>
+    <a href="https://www.deeplol.gg/champions/karthus/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Karthus.png" alt="Karthus">
+    </a>
+    <a href="https://www.deeplol.gg/champions/lee-sin/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/LeeSin.png" alt="Lee Sin">
+    </a>
+    <a href="https://www.deeplol.gg/champions/graves/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Graves.png" alt="Graves">
+    </a>
+    <a href="https://www.deeplol.gg/champions/kindred/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Kindred.png" alt="Kindred">
+    </a>
+    <a href="https://www.deeplol.gg/champions/xinzhao/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/XinZhao.png" alt="Xin Zhao"> <!-- Xin Zhaoの画像 -->
+    </a>
+    <a href="https://www.deeplol.gg/champions/jarvan/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/JarvanIV.png" alt="Jarvan IV"> <!-- Jarvan IVの画像 -->
+    </a>
+    <a href="https://www.deeplol.gg/champions/hecarim/build/jungle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Hecarim.png" alt="Hecarim"> <!-- Hecarimの画像 -->
+    </a>
+</div>
+
+<h2>MID</h2>
+<div class="lane">
+    <a href="https://www.deeplol.gg/champions/ahri/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Ahri.png" alt="Ahri">
+    </a>
+    <a href="https://www.deeplol.gg/champions/sylas/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Sylas.png" alt="Sylas">
+    </a>
+    <a href="https://www.deeplol.gg/champions/viktor/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Viktor.png" alt="Viktor">
+    </a>
+    <a href="https://www.deeplol.gg/champions/oriana/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Orianna.png" alt="Orianna">
+    </a>
+    <a href="https://www.deeplol.gg/champions/syndra/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Syndra.png" alt="Syndra">
+    </a>
+    <a href="https://www.deeplol.gg/champions/anivia/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Anivia.png" alt="Anivia">
+    </a>
+    <a href="https://www.deeplol.gg/champions/cassiopeia/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Cassiopeia.png" alt="Cassiopeia">
+    </a>
+    <a href="https://www.deeplol.gg/champions/yone/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Yone.png" alt="Yone">
+    </a>
+    <a href="https://www.deeplol.gg/champions/yasuo/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Yasuo.png" alt="Yasuo">
+    </a>
+  <a href="https://www.deeplol.gg/champions/irelia/build/middle" target="_blank">
+        <img src="https://ddragon.leagueoflegends.com/cdn/12.20.1/img/champion/Irelia.png" alt="Irelia">
+</div>
+
+</body>
+</html>
