@@ -9,25 +9,10 @@
         body {
             margin: 0;
             overflow: hidden;
-            color: #00b1ff;
+            color: #ff4081; /* ピンクと赤の中間色 */
             text-align: center;
             position: relative;
-            background-color: #2a2a2a;
-        }
-
-        /* 背景画像にぼかし効果を適用して全画面にフィットさせる */
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100vw;
-            height: 100vh;
-            background-image: url('https://cdn.discordapp.com/attachments/1141956572419989504/1301494210188546099/image.png?ex=6724ae70&is=67235cf0&hm=55b93e09021437cf581b45af7a87d12c2fb402ca6ef283f93a39ea88cb1d1f18&');
-            background-size: cover;
-            background-position: center;
-            filter: blur(4px); /* ぼかし効果を適用 */
-            z-index: -1; /* 背景を後ろに配置 */
+            background-color: #1a1a1a; /* 黒に近い色 */
         }
 
         .lane a {
@@ -57,16 +42,11 @@
         }
 
         .lane a:hover span {
-            text-shadow: 0 0 20px #00bfff, 0 0 30px #00bfff;
+            text-shadow: 0 0 20px #ff4081, 0 0 30px #ff4081; /* ピンクと赤の中間色 */
         }
     </style>
 </head>
 <body>
-    <div class="lane">
-        <!-- ここに画像やコンテンツを追加 -->
-    </div>
-</body>
-</html>
 
   
 
